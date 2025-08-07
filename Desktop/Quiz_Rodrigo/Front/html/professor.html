@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Interativo</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+    <header class="quiz-header">
+        <div class="quiz-header-content">
+            <img src="../img/image.png" width="350px" class="quiz-logo">
+            <a href="../html/home.html" class="btn-transparent">Sair</a>
+        </div>
+    </header>
+    
+
+<div class="container">
+    <h1>Cadastro de Perguntas</h1>
+    
+    <form id="formulario" action="/quest" method="POST">
+        <div class="form-group">
+            <label for="pergunta">Pergunta:</label>
+            <textarea id="pergunta" name="pergunta" rows="4" placeholder="Digite a pergunta aqui..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="alternativa1">Alternativa A:</label>
+            <input type="text" id="alternativa1" name="alternativa1" placeholder="Digite a alternativa A" required>
+        </div>
+
+        <div class="form-group">
+            <label for="alternativa2">Alternativa B:</label>
+            <input type="text" id="alternativa2" name="alternativa2" placeholder="Digite a alternativa B" required>
+        </div>
+
+        <div class="form-group">
+            <label   for="alternativa3">Alternativa C:</label>
+            <input type="text" id="alternativa3" name="alternativa3" placeholder="Digite a alternativa C" required>
+        </div>
+
+        <div class="form-group">
+            <label for="alternativa4">Alternativa D:</label>
+            <input type="text" id="alternativa4" name="alternativa4" placeholder="Digite a alternativa D" required>
+        </div>
+
+        <div class="form-group">
+            <label for="resposta">Resposta Correta:</label>
+            <input type="text" id="resposta" name="cresp" placeholder="escreva a resposta correta" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nivel">Nível de Dificuldade:</label>
+            <select id="nivel" name="nivel" required>
+                <option value="Fácil">Fácil </option>
+                <option value="Médio">Médio</option>
+                <option value="Difícil">Difícil</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <button id="cadastro">Cadastrar Pergunta</button>
+        </div>
+    </form>
+</div>
+<section class="perguntas-cadastradas">
+    <h2>Perguntas Cadastradas</h2>
+    <div id="lista-perguntas" class="card-perguntas">
+    </div>
+</section>
+
+<script src="../js/question.js"></script>
+
+</body>
+</html>
+    
