@@ -1,0 +1,107 @@
+/* esse começo da margem para o trabalho todo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('https://blog.bartzmoveis.com.br/wp-content/uploads/imgCapa-biblioteca-casa.webp');
+  padding: 20px;
+}
+
+/* Container geral dividindo tela em duas colunas */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Estilizando o formulário */
+form {
+  flex: 1;
+  background-color: lightskyblue;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.campos-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Área dos livros cadastrados */
+#lista-livros {
+  flex: 1;
+  background-color: lightskyblue;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#lista-livros h2 {
+  margin-bottom: 20px;
+}
+
+/* Card de livro em azul bebê */
+.card {
+  background-color: #3f95ce; 
+  border: 1px solid #0d89d6; 
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #003366; /* Azul escuro para contraste */
+  font-size: 1.2em;
+}
+
+.card p {
+  margin: 6px 0;
+  color: #333;
+}
+
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Livros</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  
+  <div class="container">
+    
+    <!-- FORMULÁRIO À ESQUERDA -->
+    <form id="form-livro">
+      <h2>Cadastrar Livro</h2>
+    <br>
+      <div class="campos-form">
+        <div class="campo">
+          <label for="titulo">Titulo:</label>
+          <input type="text" id="titulo" name="titulo" required />
+        </div>
+
+        <div class="campo">
+          <label for="genero">Gênero:</label>
+          <input type="text" id="genero" name="genero" required />
+        </div>
+
+        <div class="campo">
+          <label for="data">Data:</label>
+          <input type="number" id="ano_publicacao" name="data" required />
+        </div>
+
+        <div class="campo">
+          <label for="autor">Autor:</label>
+          <input type="text" id="autor" name="autor" required />
+        </div>
+
+        <div class="campo">
+          <label for="resumo">Resumo:</label>
+          <textarea id="resumo" name="resumo" required></textarea>
+        </div>
+      </div>
+
+      <button type="submit">Cadastrar Livro</button>
+    </form>
+
+    <!-- LISTA DE LIVROS À DIREITA -->
+    <div id="lista-livros">
+      <h2>Livros Cadastrados</h2>
+    </div>
+
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
